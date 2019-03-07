@@ -47,13 +47,22 @@ contract DataEntity is IDataEntity {
         uint256 oldPrice = currentPrice;
         currentPrice = _newPrice;
 
+
+  uint256 oldPrice = currentPrice;
+        currentPrice = _newPrice;
+
         emit PriceUpdated(oldPrice, _newPrice);
     }
 
     /// @notice Withdraws full balance to the owner account. Can be called only by the owner of the contract.
     function withdrawBalance(
         // No arguments
-    ) external
+
+    /// @notice Withdraws full balance to the owner account. Can be called only by the owner of the contract.
+    function withdrawBalance(
+        // No arguments
+
+) external
         onlyOwner // Can be called only by the owner
     {
         owner.transfer(address(this).balance);
