@@ -27,6 +27,10 @@ public class Test {
 
 	protected static void run() {
 		System.out.println("Test");
+		
+		protected static void run() {
+		System.out.println("Test");
+		
 	}
 
 }
