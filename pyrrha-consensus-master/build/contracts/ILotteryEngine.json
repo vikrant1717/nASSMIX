@@ -1,0 +1,285 @@
+{
+  "contractName": "ILotteryEngine",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_max",
+          "type": "uint256"
+        }
+      ],
+      "name": "getRandom",
+      "outputs": [
+        {
+          "name": "o_result",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.4.23;\n\n\ncontract ILotteryEngine {\n    function getRandom(uint256 _max) public returns (uint256 o_result);\n}\n",
+  "sourcePath": "/home/kostysh/dev/pyrrha-consensus/contracts/pandora/lottery/ILotteryEngine.sol",
+  "ast": {
+    "absolutePath": "/home/kostysh/dev/pyrrha-consensus/contracts/pandora/lottery/ILotteryEngine.sol",
+    "exportedSymbols": {
+      "ILotteryEngine": [
+        1496
+      ]
+    },
+    "id": 1497,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1488,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".23"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:18"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 1496,
+        "linearizedBaseContracts": [
+          1496
+        ],
+        "name": "ILotteryEngine",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 1495,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "getRandom",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1491,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1490,
+                  "name": "_max",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1495,
+                  "src": "76:12:18",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1489,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "76:7:18",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "75:14:18"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 1494,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1493,
+                  "name": "o_result",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1495,
+                  "src": "106:16:18",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1492,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "106:7:18",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "105:18:18"
+            },
+            "scope": 1496,
+            "src": "57:67:18",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 1497,
+        "src": "27:99:18"
+      }
+    ],
+    "src": "0:127:18"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/kostysh/dev/pyrrha-consensus/contracts/pandora/lottery/ILotteryEngine.sol",
+    "exportedSymbols": {
+      "ILotteryEngine": [
+        1496
+      ]
+    },
+    "id": 1497,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1488,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".23"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:18"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 1496,
+        "linearizedBaseContracts": [
+          1496
+        ],
+        "name": "ILotteryEngine",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 1495,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "getRandom",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1491,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1490,
+                  "name": "_max",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1495,
+                  "src": "76:12:18",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1489,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "76:7:18",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "75:14:18"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 1494,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1493,
+                  "name": "o_result",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1495,
+                  "src": "106:16:18",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1492,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "106:7:18",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "105:18:18"
+            },
+            "scope": 1496,
+            "src": "57:67:18",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 1497,
+        "src": "27:99:18"
+      }
+    ],
+    "src": "0:127:18"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-08-29T11:06:28.338Z"
+}

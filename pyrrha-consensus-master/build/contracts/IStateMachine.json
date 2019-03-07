@@ -1,0 +1,381 @@
+{
+  "contractName": "IStateMachine",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "oldState",
+          "type": "uint8"
+        },
+        {
+          "indexed": false,
+          "name": "newState",
+          "type": "uint8"
+        }
+      ],
+      "name": "StateChanged",
+      "type": "event"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "currentState",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.4.23;\n\n\ncontract IStateMachine {\n\n    function currentState() public view returns (uint8);\n\n    event StateChanged(uint8 oldState, uint8 newState);\n}",
+  "sourcePath": "/home/kostysh/dev/pyrrha-consensus/contracts/libraries/IStateMachine.sol",
+  "ast": {
+    "absolutePath": "/home/kostysh/dev/pyrrha-consensus/contracts/libraries/IStateMachine.sol",
+    "exportedSymbols": {
+      "IStateMachine": [
+        227
+      ]
+    },
+    "id": 228,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 215,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".23"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:6"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 227,
+        "linearizedBaseContracts": [
+          227
+        ],
+        "name": "IStateMachine",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 220,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "currentState",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 216,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "78:2:6"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 219,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 218,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 220,
+                  "src": "102:5:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 217,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "102:5:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "101:7:6"
+            },
+            "scope": 227,
+            "src": "57:52:6",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 226,
+            "name": "StateChanged",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 225,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 222,
+                  "indexed": false,
+                  "name": "oldState",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 226,
+                  "src": "134:14:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 221,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "134:5:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 224,
+                  "indexed": false,
+                  "name": "newState",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 226,
+                  "src": "150:14:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 223,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "150:5:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "133:32:6"
+            },
+            "src": "115:51:6"
+          }
+        ],
+        "scope": 228,
+        "src": "27:141:6"
+      }
+    ],
+    "src": "0:168:6"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/kostysh/dev/pyrrha-consensus/contracts/libraries/IStateMachine.sol",
+    "exportedSymbols": {
+      "IStateMachine": [
+        227
+      ]
+    },
+    "id": 228,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 215,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".23"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:6"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 227,
+        "linearizedBaseContracts": [
+          227
+        ],
+        "name": "IStateMachine",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 220,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "currentState",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 216,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "78:2:6"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 219,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 218,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 220,
+                  "src": "102:5:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 217,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "102:5:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "101:7:6"
+            },
+            "scope": 227,
+            "src": "57:52:6",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 226,
+            "name": "StateChanged",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 225,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 222,
+                  "indexed": false,
+                  "name": "oldState",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 226,
+                  "src": "134:14:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 221,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "134:5:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 224,
+                  "indexed": false,
+                  "name": "newState",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 226,
+                  "src": "150:14:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 223,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "150:5:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "133:32:6"
+            },
+            "src": "115:51:6"
+          }
+        ],
+        "scope": 228,
+        "src": "27:141:6"
+      }
+    ],
+    "src": "0:168:6"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-08-29T11:06:28.337Z"
+}
