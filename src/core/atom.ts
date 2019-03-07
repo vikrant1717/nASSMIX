@@ -11,6 +11,7 @@ import {
     reportObserved,
     startBatch
 } from "../internal"
+// testing
 
 export const $mobx = Symbol("mobx administration")
 
