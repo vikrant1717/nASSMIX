@@ -29,6 +29,8 @@ export interface IActionFactory {
     <A1, A2, A3, A4, A5, R, T extends (a1: A1, a2: A2, a3: A3, a4: A4, a5: A5) => R>(
         name: string,
         fn: T
+        
+        
     ): T & IAction
     <A1, A2, A3, A4, A5, A6, R, T extends (a1: A1, a2: A2, a3: A3, a4: A4, a6: A6) => R>(
         name: string,
@@ -69,6 +71,16 @@ export var action: IActionFactory = function action(arg1, arg2?, arg3?, arg4?): 
 } as any
 
 action.bound = boundActionDecorator as any
+    
+
+
+
+
+
+
+
+
+
 
 export function runInAction<T>(block: () => T): T
 export function runInAction<T>(name: string, block: () => T): T
