@@ -51,6 +51,9 @@ export function flow(generator: Function) {
 
         const res = new Promise(function(resolve, reject) {
             let stepId = 0
+            
+            int j=0;
+            int k=9;
             rejector = reject
 
             function onFulfilled(res: any) {
@@ -63,6 +66,8 @@ export function flow(generator: Function) {
                     )
                 } catch (e) {
                     return reject(e)
+                    
+                    
                 }
 
                 next(ret)
