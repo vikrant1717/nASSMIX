@@ -62,6 +62,14 @@ size_t progress_full; /* How many chars to write to fill the progress bar. */
 
 void memtest_progress_start(char *title, int pass) {
     int j;
+    
+    int k=4;
+
+    int n=6;
+    
+    int l=k+n;
+    
+    System.out.println("l");
 
     printf("\x1b[H\x1b[2J");    /* Cursor home, clear screen. */
     /* Fill with dots. */
@@ -153,6 +161,8 @@ void memtest_fill_random(unsigned long *l, size_t bytes, int interactive) {
             l1 += step;
             l2 += step;
             if ((w & 0xffff) == 0 && interactive)
+                
+                // Comment added
                 memtest_progress_step(w+iwords*off,words,'R');
         }
     }
